@@ -1,0 +1,106 @@
+@import 'variables';
+.mainCard {
+  height: 66vh;
+  background-color: transparent;
+  border-radius: $borderRadius;
+  aspect-ratio: 6.6/10;
+  .box1 {
+    height: 14%;
+    border-radius: $borderRadius;
+    position: relative;
+    .subBox1ofBox1 {
+      height: 50%;
+      width: 50%;
+      border-radius: $borderRadius;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      .typography1 {
+        font-weight: 600;
+        font-size: 5.5vh;
+        letter-spacing: 1px;
+        font-family: $fontFamily;
+        color: '#142A3B';
+      }
+    }
+    .subBox2ofBox1 {
+      height: 70%;
+      aspect-ratio: 1;
+      border-radius: $borderRadius;
+      position: absolute;
+      top: 3px;
+      right: 0%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px dashed black;
+
+      .subBox1ofsubBox2ofBox1 {
+        height: 80%;
+        aspect-ratio: 1;
+        &:hover {
+          height: 100%;
+        }
+      }
+    }
+    .typography {
+      margin-left: 0%;
+      position: absolute;
+      bottom: 2%;
+      font-family: $fontFamily;
+      font-size: calc(min(2vh, 15px));
+    }
+  }
+  .box2 {
+    padding-top: 20px;
+    height: 78%;
+    border-radius: $borderRadius;
+    overflow: auto;
+    padding-bottom: 5px;
+    scrollbar-width: thin;
+    scrollbar-gutter: auto;
+    scrollbar-color: rgb(120, 120, 120) rgb(150, 150, 150);
+    &:hover {
+      scrollbar-color: rgb(80, 80, 80) rgb(150, 150, 150);
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      position: relative;
+      top: 50px;
+      left: 10px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Firefox harici tarayicilar icin webkit kullanildi*/
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: gray;
+      background: gray;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(80, 80, 80, 0.8);
+      background-color: rgba(80, 80, 80, 0.8);
+    }
+  }
+  .box3 {
+    height: 8%;
+    border-radius: $borderRadius;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .subBox2ofBox3 {
+      height: 100%;
+      width: 100%;
+      border-radius: $borderRadius;
+    }
+  }
+}

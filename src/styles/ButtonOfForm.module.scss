@@ -1,0 +1,23 @@
+@import 'variables';
+.iconButton {
+  border: 2px solid black;
+  border-radius: $borderRadius;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 151, 232, 0.9);
+  color: white;
+  font-family: $fontFamily;
+  font-size: 1.9vh;
+  font-weight: 500;
+  border: none;
+  &:hover {
+    background-color: #0097e8;
+  }
+  .icon {
+    height: 70%;
+    margin-left: 3px;
+  }
+  span {
+    display: none;
+  }
+}
