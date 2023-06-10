@@ -1,3 +1,5 @@
+"This project consists of two forms that can be toggled between. One of the forms includes the questions to be answered by the interviewee. The other form contains input fields for the 'Title' information specifying the job category of the job advertisement, the email address to which the questions will be sent, and the email address of the sender."
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
